@@ -14,27 +14,28 @@ function verificar() {
         if (fsex [0].checked) {
             genero = 'Homem'
             if( idade >= 0 && idade < 10) {
-
+                img.setAttribute('src','./imagens/menino-kid.png')
             } else if (idade < 21) {
-
+                img.setAttribute('src','./imagens/menino-teen.png')
             } else if (idade < 50) {
-
+                img.setAttribute('src','./imagens/homem-adult.png')
             } else {
-
+                img.setAttribute('src','./imagens/homem-old.png')
             }
         } else if (fsex[1].checked) {
             genero = 'Mulher'
             if( idade >= 0 && idade < 10) {
-
+                img.setAttribute('src','./imagens/menina-kid.png')
             } else if (idade < 21) {
-
+                img.setAttribute('src','./imagens/menina-teen.png')
             } else if (idade < 50) {
-
+                img.setAttribute('src','./imagens/mulher-adult.png')
             } else {
-                
+                img.setAttribute('src','./imagens/mulher-old.png')
             }
         }
         res.style.textAlign = 'center'
         res.innerHTML = `Detectamos ${genero} com ${idade} anos`
+        res.appendChild(img)
     }
 }
