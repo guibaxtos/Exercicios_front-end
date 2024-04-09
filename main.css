@@ -48,3 +48,30 @@ button{
 #cancelar{
     background-color: red;
 }
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li{
+    max-width: 30%;
+    list-style: none;
+    position: relative;
+    max-height: 100px;
+    overflow-y: hidden ;
+}
+
+ul li img{
+    width: 100%;
+}
+
+.overlay-imagem-link{
+    padding: 16px;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    width: 100%;
+}
