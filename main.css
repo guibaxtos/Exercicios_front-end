@@ -55,11 +55,13 @@ ul{
 }
 
 ul li{
+    margin: 0 auto;
     max-width: 30%;
     list-style: none;
     position: relative;
-    max-height: 100px;
-    overflow-y: hidden ;
+    max-height: 250px;
+    overflow-y: hidden;
+    justify-content: space-between;
 }
 
 ul li img{
@@ -74,4 +76,15 @@ ul li img{
     left: 0;
     width: 0;
     width: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
+.overlay-imagem-link a{
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li:hover .overlay-imagem-link{
+    opacity: 1;
 }
