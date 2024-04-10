@@ -9,16 +9,15 @@
 <body>
     <header>
         <h1>Lista de Tarefas</h1>
+    <form id="task-form">
         <input type="text" id="task" required placeholder="Tarefa">
         <button type="submit">Adicionar Tarefa</button>
+    </form>
     </header>
     <div class="list">
-        <ul>
-            <li>
-                <button type="button">Feito</button>
-            </li>
+        <ul id="task-list">
         </ul>
-        <button type="reset" id="limpa">Limpar lista</button>
+        <button type="submit" id="limpa">Limpar lista</button>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./main.js"></script>

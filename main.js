@@ -3,14 +3,19 @@ $(document).ready(function(){
         $('.list').slideDown()
     })
 
-    $('#limpa').click(function(){
-        $('.list').slideUp()
+
+
+    $('#task-form').submit(function(e){
+        e.preventDefault();
+        const novaTarefa = $('#task').val().trim();
+        if (novaTarefa !== '') {
+            $('#task-list').append('<li>' + novaTarefa + '</li>')
+            $('#task').val('');
+        }
     })
 
-    $('header button').on('submit',function(e){
-        e.preventDefault();
-        const novaTarefa = $('#task').val();
-        const novoItem = $('<li></li>')
-        $(novaTarefa).pushTo(novoItem)
+    $('#limpa').submit(function(){
+        $('#task-list').val('')
     })
+
 })
