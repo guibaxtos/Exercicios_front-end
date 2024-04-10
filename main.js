@@ -11,6 +11,6 @@ $(document).ready(function(){
         e.preventDefault();
         const novaTarefa = $('#task').val();
         const novoItem = $('<li></li>')
-        $(novaTarefa).appendTo(novoItem)
+        $(novaTarefa).pushTo(novoItem)
     })
 })
