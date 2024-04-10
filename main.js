@@ -2,9 +2,6 @@ $(document).ready(function(){
     $('header button').click(function (){
         $('.list').slideDown()
     })
-
-
-
     $('#task-form').submit(function(e){
         e.preventDefault();
         const novaTarefa = $('#task').val().trim();
@@ -13,9 +10,7 @@ $(document).ready(function(){
             $('#task').val('');
         }
     })
-
-    $('#limpa').submit(function(){
-        $('#task-list').val('')
+    $(document).on('click','#task-list li', function(){
+        $(this).toggleClass('completed')
     })
-
 })
