@@ -13,6 +13,23 @@ header{
     padding: 16px;
 }
 
-form input{
+form input,
+button{
     display: flex;
+    margin: 0 auto;
+}
+
+form label{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    padding: 16px;
+}
+
+button{
+    margin-top: 8px;
+    padding: 8px;
+    width: 140px;
 }
