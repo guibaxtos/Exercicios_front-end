@@ -31,5 +31,21 @@
             <button type="submit">Enviar</button>
         </form>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#telefone').mask('(00) 00000-0000', {
+                placeholder: '(**) *****-****'
+            })
+            $('#cpf').mask('000.000.000-00',{
+                placeholder:"***.***.***-**"
+            })
+            $('#cep').mask('00000-000',{
+                placeholder:'*****-***'
+            })
+        })
+    </script>
+
 </body>
 </html>
