@@ -13,8 +13,7 @@ header{
     padding: 16px;
 }
 
-form input,
-button{
+form input{
     display: flex;
     margin: 0 auto;
 }
@@ -29,7 +28,17 @@ form{
 }
 
 button{
+    margin: 0 auto;
+    display: block;
     margin-top: 8px;
     padding: 8px;
     width: 140px;
+    background: rgb(36, 207, 36);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: green;
 }
