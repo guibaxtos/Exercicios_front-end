@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag Queens Mais Talentosas de RuPaul's Drag Race</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+        .navbar-nav .nav-link.active{
+            color: #fff;
+        }
+
+        .nav-link{
+            text-align: center;
+        }
+
+        section{
+            height: 100vh;
+            background-color: rgba(255, 86, 255, 0.425);
+        }
+    </style>
+</head>
+<header id="inicio">
+    <div class="navbar navbar-expand-lg">
+        <div class="container">
+            <h1>O Melhor do Drag</h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <nav class="collapse navbar-collapse justify-content-end" id="menu">
+            <ul class="nav navbar-nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#inicio">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#realness">Realness</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#qotq">Queen Of The Queens</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#rupaul">RuPaul</a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+</header>
+<body>
+    <div id="carrossel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="3000" class="carousel-item active">
+                <img class="d-block w-100" src="./imgs/Bianca-Del-Rio.webp" alt="Bianca Del Rio">
+                <div class="carousel-caption">
+                    <h2>Bianca Del Rio</h2>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block w-100" src="./imgs/Manila-Luzon.png" alt="Manila Luzon">
+                <div class="carousel-caption">
+                    <h2>Manila Luzon</h2>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block w-100" src="./imgs/Ginjer-Minj.jpg" alt="Ginjer Minj">
+                <div class="carousel-caption">
+                    <h2>Ginger Minj</h2>
+                </div>
+            </div>
+        </div>
+        <button data-bs-target="#carrossel" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carrossel" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carrossel" class="active" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carrossel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carrossel" data-bs-slide-to="2"></button>
+        </div>
+    </div>
+    <section id="realness">
+        <h2>Realness</h2>
+    </section>
+    <section id="qotq">
+        <h2>Queen Of The Queens</h2>
+    </section>
+    <section id="rupaul">
+        <h2>RuPaul</h2>
+    </section>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
