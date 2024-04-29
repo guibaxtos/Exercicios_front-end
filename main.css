@@ -1,0 +1,67 @@
+.navbar-nav .nav-link.active{
+    color: #fff;
+    background:	#d1ac60;
+}
+
+.nav-link{
+    text-align: center;
+}
+
+section{
+    height: 1000vh;
+    background-color: #e73996;
+    padding-top: 70px;
+}
+
+section h2{
+    color: #fad68d;
+    text-align: center;
+    font-weight: bold;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color:#ff5ed5;
+}
+
+header h1{
+    color:#5dfaf5e7;
+    font-weight: bolder;
+}
+
+.carousel-caption{
+    color:#fad68d;
+    background-color:#4d424942;
+    border-radius: 8px;
+    font-weight: bolder;
+}
+
+hr{
+    color:#fad68d;
+}
+
+.card{
+    background-color:#4d4249;
+    color: #fad68d;
+    margin-top: 8px;
+}
+
+.card-title{
+    color:#5dfaf5e7 ;
+}
+
+.btn-outline{
+    text-decoration: none ;
+    color: #5dfaf5e7;
+}
+
+@media screen and (max-width: 767px){
+    .card img{
+        height: 460px;
+        width: 460px;
+    }
+
+}
