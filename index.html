@@ -8,6 +8,7 @@
     <style>
         .navbar-nav .nav-link.active{
             color: #fff;
+            background:	#d1ac60;
         }
 
         .nav-link{
@@ -16,37 +17,65 @@
 
         section{
             height: 100vh;
-            background-color: rgba(255, 86, 255, 0.425);
+            background-color: #e73996;
+            padding-top: 70px;
         }
+
+        section h2{
+            color: #fad68d;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        header{
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 3;
+            background-color:#ff5ed5;
+        }
+
+        header h1{
+            color:#5dfaf5e7;
+            font-weight: bolder;
+        }
+
+        .carousel-caption{
+            color:#fad68d;
+            background-color:#4d424942;
+            border-radius: 8px;
+            font-weight: bolder;
+        }
+
     </style>
 </head>
-<header id="inicio">
-    <div class="navbar navbar-expand-lg">
-        <div class="container">
-            <h1>O Melhor do Drag</h1>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        <nav class="collapse navbar-collapse justify-content-end" id="menu">
-            <ul class="nav navbar-nav nav-pills">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#inicio">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#realness">Realness</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#qotq">Queen Of The Queens</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#rupaul">RuPaul</a>
-                </li>
-            </ul>
-        </nav>
-        </div>
-    </div>
-</header>
 <body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>O Melhor do Drag</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#realness">Realness</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#qotq">Queen Of The Queens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rupaul">RuPaul</a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+    </header>
     <div id="carrossel" class="carousel carousel-fade slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div data-bs-interval="3000" class="carousel-item active">
@@ -80,15 +109,20 @@
             <button type="button" data-bs-target="#carrossel" data-bs-slide-to="2"></button>
         </div>
     </div>
-    <section id="realness">
-        <h2>Realness</h2>
-    </section>
-    <section id="qotq">
-        <h2>Queen Of The Queens</h2>
-    </section>
-    <section id="rupaul">
-        <h2>RuPaul</h2>
-    </section>
-    <script src="lib/bootstrap.bundle.min.js"></script>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="inicio">
+            <h2>Início</h2>
+        </section>
+        <section id="realness">
+            <h2>Realness</h2>
+        </section>
+        <section id="qotq">
+            <h2>Queen Of The Queens</h2>
+        </section>
+        <section id="rupaul">
+            <h2>RuPaul</h2>
+        </section>
+        <script src="lib/bootstrap.bundle.min.js"></script>
+    </div>
 </body>
 </html>
