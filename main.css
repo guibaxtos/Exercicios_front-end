@@ -1,10 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .navbar-nav .nav-link.active{
     color: #fff;
     background:	#d1ac60;
 }
 
+.navbar{
+    font-family: "Marhey", sans-serif;
+}
+
 .container{
     display: block;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
 }
 .nav-link{
     text-align: center;
@@ -14,12 +27,14 @@ section{
     background-color: #e73996;
     padding-top: 70px;
     padding-bottom: 16px ;
+    font-family: "Marhey", sans-serif;
 }
 
 section h2{
     color: #fad68d;
     text-align: center;
     font-weight: bold;
+    font-family: "Lemonada", cursive;
 }
 
 header{
@@ -32,14 +47,17 @@ header{
 
 header h1{
     color:#5dfaf5e7;
+    font-optical-sizing: auto;
     font-weight: bolder;
+    font-family: "Lemonada", cursive;
 }
 
 .carousel-caption{
-    color:#fad68d;
+    color:#5dfaf5e7;
     background-color:#4d424994;
     border-radius: 8px;
     font-weight: bolder;
+    font-family: "Lemonada", cursive;
 }
 
 hr{
@@ -68,41 +86,64 @@ hr{
     color: #5dfaf5e7;
 }
 
+.sobre p{
+    text-align: justify;
+    background-color: #4d4249;
+    color: #d1ac60;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.sobre{
+display: block;
+margin: 0 auto;
+}
+
 footer{
     padding: 12px;
     background-color: #ff5ed5;
     color:#5dfaf5e7 ;
     text-align: center;
+    font-family: "Marhey", sans-serif;
 }
 
 @media screen and (max-width: 640px){
-    #destaques{
-        padding-left: 50px;
-        justify-content: center;
-    }
-    .card img{
-        height: 376px;
-        max-width:378px;
+    section{
+        padding-left: 55px;
     }
 
-    .card{
-        max-width: 400px;
+    .sobre img{
+        height: 355px;
+        align-items: center;
+        padding-left: 10px;
+    }
+    
+    #rupaul{
+        padding: 0;
+        padding-bottom: 12px;
+        align-items: center;
+    }
+
+    .txt{
+        text-align: center;
     }
     
 }
 
 @media screen and (min-width: 641px) and (max-width: 1023px){
     .card img{
-        max-width: 100%;
-        height: 200px;
+        width: 349px;
     }
-    
-    .card{
-        max-width: 200px;
-    }
-
     .container{
         max-width: 100%;
+    }
+
+    .sobre img{
+        padding-left: 10px;
+    }
+
+    .sobre p{
+        padding: 24px;
     }
 
 }

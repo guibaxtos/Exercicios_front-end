@@ -6,6 +6,12 @@
     <title>Drag Queens Mais Talentosas de RuPaul's Drag Race</title>
     <link rel="stylesheet" href="lib/bootstrap.min.css">
     <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&family=Marhey:wght@300..700&display=swap" rel="stylesheet">
     <style>
 
     </style>
@@ -21,25 +27,26 @@
             <nav class="collapse navbar-collapse justify-content-end" id="menu">
                 <ul class="nav navbar-nav nav-pills">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#detaques">Destaques</a>
+                        <a class="nav-link active" href="#carrossel">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Queens Favoritas</a>
+                        <a class="nav-link" href="#destaques">Destaques</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">RuPaul</a>
+                        <a class="nav-link" href="#favoritas">As Favoritas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Mais do Mundo Drag</a>
+                        <a class="nav-link" href="#rupaul">RuPaul</a>
                     </li>
                 </ul>
             </nav>
             </div>
         </div>
     </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
     <div id="carrossel" class="carousel carousel-fade slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div data-bs-interval="3000" class="carousel-item active">
+            <div data-bs-interval="300" class="carousel-item active">
                 <img class="d-block w-100" src="./imgs/Bianca-Del-Rio.webp" alt="Bianca Del Rio">
                 <div class="carousel-caption">
                     <h2>Bianca Del Rio</h2>
@@ -70,13 +77,12 @@
             <button type="button" data-bs-target="#carrossel" data-bs-slide-to="2"></button>
         </div>
     </div>
-    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
         <section id="destaques">
+            <div class="container">
             <h2>Destaques</h2>
             <hr>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
+                <div class="row justify-content-center ">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="card">
                                 <img src="./imgs/Gottmik.jpeg" alt="Gottmik">
                                 <div class="card-body">
@@ -88,7 +94,7 @@
                                 </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="card">
                             <img src="./imgs/Sasha Velour.jpeg" alt="Sasha Velour">
                             <div class="card-body">
@@ -100,7 +106,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="card">
                             <img src="./imgs/maddy.jpeg" alt="Maddy Morphosis">
                             <div class="card-body">
@@ -112,7 +118,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="card">
                             <img src="./imgs/Trixie Mattel.jpeg" alt="Trixie Mattel">
                             <div class="card-body">
@@ -124,7 +130,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="card">
                             <img src="./imgs/Monet-X-Change.jpeg" alt="Monét X Change">
                             <div class="card-body">
@@ -136,7 +142,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="card">
                             <img src="./imgs/Raja.jpeg" alt="Raja">
                             <div class="card-body">
@@ -151,78 +157,78 @@
                 </div>
             </div>
         </section>
-        <section id="qmf">
+        <section id="favoritas">
+            <div class="container">
             <h2>As favoritas dos fãs</h2>
             <hr>
-            <div class="container">
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="card">
                             <img src="./imgs/Bianca Del Rio.jpeg" alt="Bianca Del Rio">
                             <div class="card-body">
                                 <h4 class="card-title">Bianca Del Rio</h4>
                                 <p>
-
+                                    Conhecida por sua língua afiada e habilidades de comédia, Bianca Del Rio, vencedora da 6ª temporada, é uma drag queen experiente que conquistou o público com seu [...]
                                 </p>
                                 <a href="#" class="btn-outline">Ver mais sobre</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="card">
-                            <img src="./imgs/alasca.jpeg" alt="Alasca">
+                            <img src="./imgs/alasca.jpeg" alt="Alaska">
                             <div class="card-body">
-                                <h4 class="card-title">Alasca</h4>
+                                <h4 class="card-title">Alaska</h4>
                                 <p>
-
+                                    Alaska, finalista da 5ª temporada e vencedora de RuPaul’s Drag Race All Stars 2, é conhecida por seu estilo único, voz marcante e performances energéticas. [...]
                                 </p>
                                 <a href="#" class="btn-outline">Ver mais sobre</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="card">
                             <img src="./imgs/Vanessa Vanjie Mateo.jpeg" alt="Vanjie">
                             <div class="card-body">
                                 <h4 class="card-title">Vanjie</h4>
                                 <p>
-
+                                    Vanessa Vanjie Mateo foi eliminada no primeiro episódio da décima temporada e enquanto ela caminhava para trás para fora do palco, suas palavras de despedida foram "Miss...Vanjie",[...]
                                 </p>
                                 <a href="#" class="btn-outline">Ver mais sobre</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="card">
                             <img src="./imgs/katya_.jpeg" alt="Katya">
                             <div class="card-body">
                                 <h4 class="card-title">Katya</h4>
                                 <p>
-
+                                    Participante da 7ª temporada e RuPaul’s Drag Race All Stars 2, Katya é admirada por sua inteligência, humor excêntrico e estilo único. Ela conquistou os fãs com seu carisma peculiar e franqueza. [...]
                                 </p>
                                 <a href="#" class="btn-outline">Ver mais sobre</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="card">
-                            <img src="./imgs/latrice-royale.jpeg" alt="Latrice Royale">
+                            <img src="./imgs/Alyssa Edwards.jpeg" alt="Alyssa Edwards">
                             <div class="card-body">
-                                <h4 class="card-title">Latrice royale</h4>
+                                <h4 class="card-title">Alyssa Edwards</h4>
                                 <p>
-
+                                    Alyssa é lembrada por seu carisma, energia contagiante e movimentos de dança impressionantes. Ela participou da 5ª temporada e também apareceu em RuPaul’s Drag Race All Stars 2, [...]
                                 </p>
                                 <a href="#" class="btn-outline">Ver mais sobre</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="card">
-                            <img src="./imgs/Valentina.jpeg" alt="Valentina">
+                            <img src="./imgs/jinkx-moonson.jpeg" alt="Jinkx Moonson">
                             <div class="card-body">
-                                <h4 class="card-title">Valentina</h4>
+                                <h4 class="card-title">Jinkx Moonson</h4>
                                 <p>
-
+                                    Vencedora da 5ª temporada, Jinkx Monsoon é conhecida por sua versatilidade artística, incluindo habilidades de canto, atuação e comédia. Sua personalidade encantadora e talento [...]
                                 </p>
                                 <a href="#" class="btn-outline">Ver mais sobre</a>
                             </div>
@@ -231,12 +237,26 @@
                 </div>
             </div>
         </section>
+        <section id="rupaul">
+            <div class="container">
+        <h2>RuPaul</h2>
+            <hr>
+            <div class="sobre">
+                    <img src="./imgs/rupaul.jpeg" alt="Rupaul">
+            <div class="txt">
+                <p>
+                    RuPaul é a força criativa por trás do programa, servindo como apresentadora e mentora das participantes. Ele é uma lenda da cultura drag, conhecido por sua elegância, sabedoria e impacto duradouro na comunidade LGBTQ+.
+                </p>
+            </div>
+            </div>
+            </div>
+        </section>
+    </div>
         <footer>
             <p>
                 &copy;Drag Blog - Todos os direitos reservado - 2024 
             </p>
         </footer>
         <script src="lib/bootstrap.bundle.min.js"></script>
-    </div>
 </body>
 </html>
